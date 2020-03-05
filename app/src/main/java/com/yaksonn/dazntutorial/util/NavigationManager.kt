@@ -24,5 +24,4 @@ class NavigationManager @Inject constructor(private val navSubject: IFragmentNav
             .replace(R.id.container, ScoresFragment.newInstance())
             .commit()
     }
-
 }

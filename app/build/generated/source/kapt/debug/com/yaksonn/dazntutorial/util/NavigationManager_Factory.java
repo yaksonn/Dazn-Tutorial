@@ -1,7 +1,6 @@
 package com.yaksonn.dazntutorial.util;
 
 import com.yaksonn.dazntutorial.util.listener.IFragmentNavigationSubject;
-
 import dagger.internal.Factory;
 import javax.annotation.Generated;
 import javax.inject.Provider;

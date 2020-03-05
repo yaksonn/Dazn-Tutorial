@@ -3,12 +3,11 @@ package com.yaksonn.dazntutorial.ui.activity.main
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
-import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.AdapterView
 import android.widget.AdapterView.OnItemSelectedListener
 import com.yaksonn.dazntutorial.R
-import com.yaksonn.dazntutorial.ui.activity.main.CustomSpinnerAdapter
+import com.yaksonn.dazntutorial.base.BaseActivity
 import dagger.android.AndroidInjection
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
@@ -19,8 +18,9 @@ import com.yaksonn.dazntutorial.util.listener.IFragmentNavigationSubject
 import com.yaksonn.dazntutorial.util.listener.INavigationManager
 import javax.inject.Inject
 
-class MainActivity : AppCompatActivity(), HasSupportFragmentInjector,
+class MainActivity : BaseActivity(), HasSupportFragmentInjector,
     IFragmentNavigationSubject {
+
 
     @Inject
     lateinit var fragmentDispatchingAndroidInjector: DispatchingAndroidInjector<Fragment>
@@ -28,11 +28,12 @@ class MainActivity : AppCompatActivity(), HasSupportFragmentInjector,
     @Inject
     lateinit var navigationManager: INavigationManager
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        AndroidInjection.inject(this)
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
+    override fun getLayoutId(): Int {
+        return R.layout.activity_main
+    }
+
+    override fun prepareView(savedInstanceState: Bundle?) {
         spinner.adapter = CustomSpinnerAdapter(
             this,
             arrayOf("News", "Scores", "Standings")
@@ -59,8 +60,9 @@ class MainActivity : AppCompatActivity(), HasSupportFragmentInjector,
                 spinner.text1.text = ""
             }
         }
-
     }
+
+
 
     override fun supportFragmentInjector(): AndroidInjector<Fragment> {
         return fragmentDispatchingAndroidInjector

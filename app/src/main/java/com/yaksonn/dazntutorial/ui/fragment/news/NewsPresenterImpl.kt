@@ -1,6 +1,6 @@
 package com.yaksonn.dazntutorial.ui.fragment.news
 
-import com.yaksonn.dazntutorial.networking.INewsService
+import com.yaksonn.dazntutorial.network.newsprovider.INewsService
 
 class NewsPresenterImpl constructor(val view: NewsContract.View, val newsService: INewsService) :
     NewsContract.Presenter {

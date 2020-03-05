@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import dagger.android.support.AndroidSupportInjection
 import kotlinx.android.synthetic.main.fragment_scores.view.*
 import com.yaksonn.dazntutorial.R
-import com.yaksonn.dazntutorial.networking.IScoresService
+import com.yaksonn.dazntutorial.network.scoresprovider.IScoresService
 import com.yaksonn.dazntutorial.util.customviews.Toaster
 import javax.inject.Inject
 import java.util.*

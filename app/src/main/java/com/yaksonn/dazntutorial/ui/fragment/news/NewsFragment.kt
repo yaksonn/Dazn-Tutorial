@@ -10,7 +10,7 @@ import com.squareup.picasso.Picasso
 import dagger.android.support.AndroidSupportInjection
 import kotlinx.android.synthetic.main.fragment_news.view.*
 import com.yaksonn.dazntutorial.R
-import com.yaksonn.dazntutorial.networking.INewsService
+import com.yaksonn.dazntutorial.network.newsprovider.INewsService
 import com.yaksonn.dazntutorial.util.customviews.Toaster
 import javax.inject.Inject
 

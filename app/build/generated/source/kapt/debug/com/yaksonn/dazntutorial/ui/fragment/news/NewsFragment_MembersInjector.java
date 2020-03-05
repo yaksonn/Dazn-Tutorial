@@ -1,10 +1,10 @@
 package com.yaksonn.dazntutorial.ui.fragment.news;
 
+import com.yaksonn.dazntutorial.network.newsprovider.INewsService;
+import com.yaksonn.dazntutorial.util.customviews.Toaster;
 import dagger.MembersInjector;
 import javax.annotation.Generated;
 import javax.inject.Provider;
-import com.yaksonn.dazntutorial.networking.INewsService;
-import com.yaksonn.dazntutorial.util.customviews.Toaster;
 
 @Generated(
   value = "dagger.internal.codegen.ComponentProcessor",

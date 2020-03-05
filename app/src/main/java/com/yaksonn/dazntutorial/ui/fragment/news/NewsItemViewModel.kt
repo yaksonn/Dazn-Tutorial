@@ -1,7 +1,7 @@
 package com.yaksonn.dazntutorial.ui.fragment.news
 
 import android.text.TextUtils
-import com.yaksonn.dazntutorial.networking.models.NewsModel
+import com.yaksonn.dazntutorial.network.models.NewsModel
 
 class NewsItemViewModel {
 

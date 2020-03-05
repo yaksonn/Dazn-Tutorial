@@ -1,6 +1,6 @@
 package com.yaksonn.dazntutorial.ui.fragment.scores
 
-import com.yaksonn.dazntutorial.networking.models.ScoresModel
+import com.yaksonn.dazntutorial.network.models.ScoresModel
 
 class ScoresItemViewModel {
 

@@ -1,6 +1,6 @@
 package com.yaksonn.dazntutorial.ui.fragment.scores
 
-import com.yaksonn.dazntutorial.networking.IScoresService
+import com.yaksonn.dazntutorial.network.scoresprovider.IScoresService
 
 class ScoresPresenterImpl constructor(val view: ScoresContract.View, val scoresService: IScoresService) :
     ScoresContract.Presenter {

@@ -1,10 +1,10 @@
 package com.yaksonn.dazntutorial.ui.fragment.scores;
 
+import com.yaksonn.dazntutorial.network.scoresprovider.IScoresService;
+import com.yaksonn.dazntutorial.util.customviews.Toaster;
 import dagger.MembersInjector;
 import javax.annotation.Generated;
 import javax.inject.Provider;
-import com.yaksonn.dazntutorial.networking.IScoresService;
-import com.yaksonn.dazntutorial.util.customviews.Toaster;
 
 @Generated(
   value = "dagger.internal.codegen.ComponentProcessor",

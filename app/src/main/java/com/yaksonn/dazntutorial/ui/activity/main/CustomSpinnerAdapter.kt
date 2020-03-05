@@ -19,7 +19,6 @@ class CustomSpinnerAdapter(context: Context, val objects: Array<String>) :
         val view: View
 
         if (convertView == null) {
-            // Inflate the drop down using the helper's LayoutInflater
             val inflater = mDropDownHelper.dropDownViewInflater
             view = inflater.inflate(R.layout.list_item, parent, false)
         } else {
@@ -33,7 +32,6 @@ class CustomSpinnerAdapter(context: Context, val objects: Array<String>) :
         } else {
             R.drawable.spinner_divider
         }
-
         view.text1.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, spinnerDivider)
 
         return view
