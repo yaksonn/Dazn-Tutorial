@@ -2,7 +2,7 @@ package com.yaksonn.dazntutorial.di.module;
 
 import android.app.Activity;
 import com.yaksonn.dazntutorial.di.scope.ActivityScope;
-import com.yaksonn.dazntutorial.ui.activity.main.MainActivity;
+import com.yaksonn.dazntutorial.ui.activity.MainActivity;
 import dagger.Binds;
 import dagger.Module;
 import dagger.Subcomponent;

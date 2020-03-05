@@ -7,8 +7,6 @@ import java.util.*
 /**
  * Created by @yaksonn
  */
-
-
 fun getFormattedDateWithMonthNameFromDateString(dateString: String): String {
     val formatter = SimpleDateFormat("yyyy-MM-dd")
     var calendar: Calendar? = null

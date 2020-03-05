@@ -1,13 +1,12 @@
 package com.yaksonn.dazntutorial.di.module
 
 import android.app.Activity
-import com.yaksonn.dazntutorial.di.module.HelperModule
 import com.yaksonn.dazntutorial.di.scope.ActivityScope
 import dagger.Binds
 import dagger.Module
 import dagger.Provides
 import dagger.android.ContributesAndroidInjector
-import com.yaksonn.dazntutorial.ui.activity.main.MainActivity
+import com.yaksonn.dazntutorial.ui.activity.MainActivity
 import com.yaksonn.dazntutorial.ui.fragment.news.NewsFragment
 import com.yaksonn.dazntutorial.ui.fragment.scores.ScoresFragment
 import com.yaksonn.dazntutorial.util.listener.IFragmentNavigationSubject

@@ -6,16 +6,15 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.RelativeLayout
 import android.widget.TextView
-import kotlinx.android.synthetic.main.scores_item.view.*
+import kotlinx.android.synthetic.main.row_scores_recycler.view.*
 import com.yaksonn.dazntutorial.R
 
 class ScoresRecyclerAdapter(val teamMatchViewModel: List<TeamMatchViewModel>) :
     RecyclerView.Adapter<ScoresRecyclerAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, p1: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.scores_item, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.row_scores_recycler, parent, false)
         return ViewHolder(view)
     }
 

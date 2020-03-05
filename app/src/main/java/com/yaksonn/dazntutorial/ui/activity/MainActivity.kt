@@ -1,4 +1,4 @@
-package com.yaksonn.dazntutorial.ui.activity.main
+package com.yaksonn.dazntutorial.ui.activity
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -8,7 +8,7 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.AdapterView.OnItemSelectedListener
 import com.yaksonn.dazntutorial.R
-import com.yaksonn.dazntutorial.base.BaseActivity
+import com.yaksonn.dazntutorial.ui.activity.CustomSpinnerAdapter
 import dagger.android.AndroidInjection
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector

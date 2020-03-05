@@ -45,7 +45,7 @@ class ScoresFragment : Fragment(), ScoresContract.View {
         super.onViewCreated(view, savedInstanceState)
         scoresPresenterImpl = ScoresPresenterImpl(this, scoresService)
         scoresAdapter = ScoresRecyclerAdapter(matches)
-        view.rv_scores.adapter = scoresAdapter
+        view.scoresRecyclerView.adapter = scoresAdapter
         scoresPresenterImpl.loadScores()
 
     }

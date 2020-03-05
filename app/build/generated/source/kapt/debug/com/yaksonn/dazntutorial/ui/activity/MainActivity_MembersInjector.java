@@ -1,4 +1,4 @@
-package com.yaksonn.dazntutorial.ui.activity.main;
+package com.yaksonn.dazntutorial.ui.activity;
 
 import android.support.v4.app.Fragment;
 import com.yaksonn.dazntutorial.util.listener.INavigationManager;

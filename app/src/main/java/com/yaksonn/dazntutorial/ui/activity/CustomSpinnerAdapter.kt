@@ -1,4 +1,4 @@
-package com.yaksonn.dazntutorial.ui.activity.main
+package com.yaksonn.dazntutorial.ui.activity
 
 import android.content.Context
 import android.content.res.Resources

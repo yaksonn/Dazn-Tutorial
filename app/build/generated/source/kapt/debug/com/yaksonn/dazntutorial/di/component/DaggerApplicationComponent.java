@@ -18,8 +18,8 @@ import com.yaksonn.dazntutorial.di.module.NetworkingModule_Retrofit$app_debugFac
 import com.yaksonn.dazntutorial.network.ApiServiceInterface;
 import com.yaksonn.dazntutorial.network.newsprovider.INewsService;
 import com.yaksonn.dazntutorial.network.scoresprovider.IScoresService;
-import com.yaksonn.dazntutorial.ui.activity.main.MainActivity;
-import com.yaksonn.dazntutorial.ui.activity.main.MainActivity_MembersInjector;
+import com.yaksonn.dazntutorial.ui.activity.MainActivity;
+import com.yaksonn.dazntutorial.ui.activity.MainActivity_MembersInjector;
 import com.yaksonn.dazntutorial.ui.fragment.news.NewsFragment;
 import com.yaksonn.dazntutorial.ui.fragment.news.NewsFragment_MembersInjector;
 import com.yaksonn.dazntutorial.ui.fragment.scores.ScoresFragment;

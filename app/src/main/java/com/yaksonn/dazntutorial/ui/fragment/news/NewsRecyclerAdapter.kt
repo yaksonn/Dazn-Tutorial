@@ -7,9 +7,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.news_item.view.*
+import kotlinx.android.synthetic.main.row_news_recycler.view.*
 import com.yaksonn.dazntutorial.R
-import com.yaksonn.dazntutorial.util.*
 
 class NewsRecyclerAdapter(
     val newsItemViewModels: List<NewsItemViewModel>,
@@ -19,7 +18,7 @@ class NewsRecyclerAdapter(
     RecyclerView.Adapter<NewsRecyclerAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, p1: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.news_item, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.row_news_recycler, parent, false)
         return ViewHolder(view)
     }
 

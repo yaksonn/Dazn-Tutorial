@@ -22,10 +22,10 @@
         tools:text="asdasdsadflknasşflnasf" />
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/rv_scores"
+        android:id="@+id/scoresRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layoutManager="android.support.v7.widget.LinearLayoutManager"
         tools:itemCount="3"
-        tools:listitem="@layout/scores_item" />
+        tools:listitem="@layout/row_scores_recycler" />
 </LinearLayout>
