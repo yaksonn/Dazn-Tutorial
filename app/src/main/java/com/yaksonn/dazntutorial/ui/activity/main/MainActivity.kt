@@ -44,6 +44,7 @@ class MainActivity : BaseActivity(), HasSupportFragmentInjector,
                 spinner.text1.text = ""
 
                 when (position) {
+                    
                     0 -> {
                         navigationManager.showNews()
                         return
