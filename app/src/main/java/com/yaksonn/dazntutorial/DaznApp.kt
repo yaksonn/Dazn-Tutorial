@@ -8,6 +8,10 @@ import dagger.android.HasActivityInjector
 import com.yaksonn.dazntutorial.di.component.DaggerApplicationComponent
 import javax.inject.Inject
 
+/**
+ * Created by @yaksonn
+ */
+
 class DaznApp : Application(), HasActivityInjector {
     @Inject
     lateinit var activityDispatchingAndroidInjector: DispatchingAndroidInjector<Activity>

@@ -14,6 +14,9 @@ import retrofit2.converter.simplexml.SimpleXmlConverterFactory
 import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
 
+/**
+ * Created by @yaksonn
+ */
 
 @Module
 class NetworkingModule {

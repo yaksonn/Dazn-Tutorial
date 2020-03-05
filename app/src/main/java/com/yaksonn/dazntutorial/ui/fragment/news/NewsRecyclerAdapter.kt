@@ -10,6 +10,10 @@ import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.row_news_recycler.view.*
 import com.yaksonn.dazntutorial.R
 
+/**
+ * Created by @yaksonn
+ */
+
 class NewsRecyclerAdapter(
     val newsItemViewModels: List<NewsItemViewModel>,
     val picasso: Picasso,

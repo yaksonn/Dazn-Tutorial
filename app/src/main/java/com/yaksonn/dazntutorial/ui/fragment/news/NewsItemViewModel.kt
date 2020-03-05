@@ -3,6 +3,10 @@ package com.yaksonn.dazntutorial.ui.fragment.news
 import android.text.TextUtils
 import com.yaksonn.dazntutorial.network.models.NewsModel
 
+/**
+ * Created by @yaksonn
+ */
+
 class NewsItemViewModel {
 
     var title: String

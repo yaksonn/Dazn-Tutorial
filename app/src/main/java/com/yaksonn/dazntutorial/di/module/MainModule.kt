@@ -13,6 +13,11 @@ import com.yaksonn.dazntutorial.di.component.StaticComponent
 
 import javax.inject.Singleton
 
+/**
+ * Created by @yaksonn
+ */
+
+
 @Module(subcomponents = arrayOf(StaticComponent::class), includes = arrayOf(
     NetworkingModule::class))
 abstract class MainModule {
@@ -34,13 +39,5 @@ abstract class MainModule {
             return app.getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
         }
     }
-
-    //    @Binds
-    //    @Singleton
-    //    abstract INewsService newsService(NewsService authSvc);
-
-    //    @Binds
-    //    @Singleton
-    //    abstract IMessagingManager provideMessagingManager(MessagingManager messagingManager);
 
 }

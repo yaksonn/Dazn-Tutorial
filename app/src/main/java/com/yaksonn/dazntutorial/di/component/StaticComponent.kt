@@ -3,6 +3,11 @@ package com.yaksonn.dazntutorial.di.component
 import com.yaksonn.dazntutorial.di.module.StaticModule
 import dagger.Subcomponent
 
+
+/**
+ * Created by @yaksonn
+ */
+
 @Subcomponent(modules = arrayOf(StaticModule::class))
 interface StaticComponent {
 

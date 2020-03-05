@@ -9,6 +9,10 @@ import javax.inject.Inject
 import java.lang.ref.WeakReference
 
 
+/**
+ * Created by @yaksonn
+ */
+
 class Toaster @Inject
 constructor(context: Context) {
     private val contextWeakReference: WeakReference<Context> = WeakReference(context)

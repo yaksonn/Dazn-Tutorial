@@ -5,8 +5,11 @@ import com.yaksonn.dazntutorial.network.models.ScoresModel
 import retrofit2.Call
 import retrofit2.http.GET
 
-interface ApiServiceInterface {
+/**
+ * Created by @yaksonn
+ */
 
+interface ApiServiceInterface {
 
     @get:GET(value = "latestnews.xml")
     val news: Call<NewsModel>

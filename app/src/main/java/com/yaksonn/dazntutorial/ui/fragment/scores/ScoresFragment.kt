@@ -16,6 +16,10 @@ import javax.inject.Inject
 import java.util.*
 
 
+/**
+ * Created by @yaksonn
+ */
+
 class ScoresFragment : Fragment(), ScoresContract.View {
 
     @Inject

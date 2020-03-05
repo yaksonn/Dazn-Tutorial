@@ -11,6 +11,10 @@ import com.yaksonn.dazntutorial.network.ApiServiceInterface
 
 import javax.inject.Singleton
 
+/**
+ * Created by @yaksonn
+ */
+
 @Singleton
 @Component(modules = arrayOf(AndroidSupportInjectionModule::class, ActivityBindingModule::class, MainModule::class))
 interface ApplicationComponent : AndroidInjector<DaznApp> {

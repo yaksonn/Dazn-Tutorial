@@ -2,6 +2,10 @@ package com.yaksonn.dazntutorial.network.newsprovider
 
 import com.yaksonn.dazntutorial.ui.fragment.news.NewsItemViewModel
 
+/**
+ * Created by @yaksonn
+ */
+
 interface INewsService {
     fun getNews(callback: IGetNewsCallback)
 

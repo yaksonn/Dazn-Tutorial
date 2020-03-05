@@ -1,5 +1,9 @@
 package com.yaksonn.dazntutorial.ui.fragment.news
 
+/**
+ * Created by @yaksonn
+ */
+
 class NewsContract {
 
     interface View {

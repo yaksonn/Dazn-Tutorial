@@ -6,6 +6,11 @@ import dagger.Module
 import dagger.android.ContributesAndroidInjector
 import com.yaksonn.dazntutorial.ui.activity.MainActivity
 
+
+/**
+ * Created by @yaksonn
+ */
+
 @Module
 internal abstract class ActivityBindingModule {
 

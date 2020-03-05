@@ -2,6 +2,10 @@ package com.yaksonn.dazntutorial.ui.fragment.scores
 
 import com.yaksonn.dazntutorial.network.scoresprovider.IScoresService
 
+/**
+ * Created by @yaksonn
+ */
+
 class ScoresPresenterImpl constructor(val view: ScoresContract.View, val scoresService: IScoresService) :
     ScoresContract.Presenter {
 

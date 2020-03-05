@@ -11,6 +11,10 @@ import android.view.View
 import android.view.ViewGroup
 import com.yaksonn.dazntutorial.R
 
+/**
+ * Created by @yaksonn
+ */
+
 class LoadingProgressBar : DialogFragment() {
 
     override fun onCreateView(

@@ -10,6 +10,10 @@ import android.widget.TextView
 import kotlinx.android.synthetic.main.row_scores_recycler.view.*
 import com.yaksonn.dazntutorial.R
 
+/**
+ * Created by @yaksonn
+ */
+
 class ScoresRecyclerAdapter(val teamMatchViewModel: List<TeamMatchViewModel>) :
     RecyclerView.Adapter<ScoresRecyclerAdapter.ViewHolder>() {
 

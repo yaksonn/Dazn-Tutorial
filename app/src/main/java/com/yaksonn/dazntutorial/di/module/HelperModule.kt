@@ -10,6 +10,10 @@ import com.yaksonn.dazntutorial.network.newsprovider.NewsService
 import com.yaksonn.dazntutorial.network.scoresprovider.IScoresService
 import com.yaksonn.dazntutorial.network.scoresprovider.ScoresService
 
+/**
+ * Created by @yaksonn
+ */
+
 @Module(subcomponents = arrayOf(StaticComponent::class))
 class HelperModule {
 

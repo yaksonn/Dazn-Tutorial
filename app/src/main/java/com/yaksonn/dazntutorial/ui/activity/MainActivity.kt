@@ -8,7 +8,6 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.AdapterView.OnItemSelectedListener
 import com.yaksonn.dazntutorial.R
-import com.yaksonn.dazntutorial.ui.activity.CustomSpinnerAdapter
 import dagger.android.AndroidInjection
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
@@ -18,6 +17,10 @@ import kotlinx.android.synthetic.main.row_custom_dropdown.view.*
 import com.yaksonn.dazntutorial.util.listener.IFragmentNavigationSubject
 import com.yaksonn.dazntutorial.util.listener.INavigationManager
 import javax.inject.Inject
+
+/**
+ * Created by @yaksonn
+ */
 
 class MainActivity : AppCompatActivity(), HasSupportFragmentInjector,
     IFragmentNavigationSubject {

@@ -8,6 +8,10 @@ import com.yaksonn.dazntutorial.util.listener.IFragmentNavigationSubject
 import com.yaksonn.dazntutorial.util.listener.INavigationManager
 import javax.inject.Inject
 
+/**
+ * Created by @yaksonn
+ */
+
 class NavigationManager @Inject constructor(private val navSubject: IFragmentNavigationSubject) :
     INavigationManager {
 

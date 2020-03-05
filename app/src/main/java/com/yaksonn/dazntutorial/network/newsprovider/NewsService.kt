@@ -9,6 +9,10 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
+/**
+ * Created by @yaksonn
+ */
+
 class NewsService(private val api: ApiServiceInterface) : INewsService {
 
     override fun getNews(callback: INewsService.IGetNewsCallback) {

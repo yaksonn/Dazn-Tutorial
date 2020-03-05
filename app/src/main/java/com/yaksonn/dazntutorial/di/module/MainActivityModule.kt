@@ -14,6 +14,11 @@ import com.yaksonn.dazntutorial.util.listener.INavigationManager
 import com.yaksonn.dazntutorial.util.NavigationManager
 import com.yaksonn.dazntutorial.util.customviews.Toaster
 
+
+/**
+ * Created by @yaksonn
+ */
+
 @Module
 internal abstract class MainActivityModule {
 

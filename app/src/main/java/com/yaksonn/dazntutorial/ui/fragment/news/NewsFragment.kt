@@ -14,6 +14,10 @@ import com.yaksonn.dazntutorial.network.newsprovider.INewsService
 import com.yaksonn.dazntutorial.util.customviews.Toaster
 import javax.inject.Inject
 
+/**
+ * Created by @yaksonn
+ */
+
 
 class NewsFragment : Fragment(), NewsContract.View {
     @Inject

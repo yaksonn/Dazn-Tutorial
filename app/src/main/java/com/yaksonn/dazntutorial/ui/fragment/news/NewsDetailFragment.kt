@@ -10,6 +10,11 @@ import android.view.ViewGroup
 import kotlinx.android.synthetic.main.news_detail_dialog.view.*
 import com.yaksonn.dazntutorial.R
 
+
+/**
+ * Created by @yaksonn
+ */
+
 class NewsDetailFragment : DialogFragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {

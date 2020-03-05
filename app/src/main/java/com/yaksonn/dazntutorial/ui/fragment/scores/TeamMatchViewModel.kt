@@ -2,6 +2,10 @@ package com.yaksonn.dazntutorial.ui.fragment.scores
 
 import com.yaksonn.dazntutorial.network.models.ScoresModel
 
+/**
+ * Created by @yaksonn
+ */
+
 class TeamMatchViewModel {
     var teamAName: String
     var teamBName: String

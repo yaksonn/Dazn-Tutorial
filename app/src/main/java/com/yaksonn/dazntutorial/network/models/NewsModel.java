@@ -8,7 +8,7 @@ import org.simpleframework.xml.Root;
 import java.util.List;
 
 /**
- * Created by @yaksonn on 5.03.2020.
+ * Created by @yaksonn
  */
 @Root(name="rss")
 public class NewsModel {

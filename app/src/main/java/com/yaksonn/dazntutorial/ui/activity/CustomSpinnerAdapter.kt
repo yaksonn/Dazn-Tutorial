@@ -9,6 +9,10 @@ import android.widget.ArrayAdapter
 import com.yaksonn.dazntutorial.R
 import kotlinx.android.synthetic.main.row_custom_dropdown.view.*
 
+/**
+ * Created by @yaksonn
+ */
+
 class CustomSpinnerAdapter(context: Context, val objects: Array<String>) :
     ArrayAdapter<String>(context, R.layout.row_custom_dropdown, objects),
     ThemedSpinnerAdapter {
