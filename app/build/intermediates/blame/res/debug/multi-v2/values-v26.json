@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/deejawuu/Desktop/Dazn-Tutorial/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v26/values-v26.xml",
+            "outputFile": "C:\\Users\\yusuf.akson\\Desktop\\Dazn-Tutorial\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v26\\values-v26.xml",
             "map": [
                 {
-                    "source": "/Users/deejawuu/.gradle/caches/transforms-2/files-2.1/d4dbe6b13c403dfd9b825a60b61e1ebc/res/values-v26/values-v26.xml",
+                    "source": "C:\\Users\\yusuf.akson\\.gradle\\caches\\transforms-2\\files-2.1\\2ea306d59f5e21682358f4350e720889\\res\\values-v26\\values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",

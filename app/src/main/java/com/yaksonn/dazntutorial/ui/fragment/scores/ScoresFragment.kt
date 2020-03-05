@@ -11,6 +11,7 @@ import kotlinx.android.synthetic.main.fragment_scores.view.*
 import com.yaksonn.dazntutorial.R
 import com.yaksonn.dazntutorial.network.scoresprovider.IScoresService
 import com.yaksonn.dazntutorial.util.customviews.Toaster
+import com.yaksonn.dazntutorial.util.getFormattedDateWithMonthNameFromDateString
 import javax.inject.Inject
 import java.util.*
 
@@ -22,14 +23,11 @@ class ScoresFragment : Fragment(), ScoresContract.View {
 
     @Inject
     lateinit var toaster: Toaster
-
     lateinit var scoresPresenterImpl: ScoresPresenterImpl
-
-    var matches: MutableList<MatchViewModel> = ArrayList()
-
+    var matches: MutableList<TeamMatchViewModel> = ArrayList()
     lateinit var timer: Timer
+    lateinit var scoresAdapter: ScoresRecyclerAdapter
 
-    lateinit var scoresAdapter: ScoresAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         AndroidSupportInjection.inject(this)
@@ -40,24 +38,20 @@ class ScoresFragment : Fragment(), ScoresContract.View {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_scores, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         scoresPresenterImpl = ScoresPresenterImpl(this, scoresService)
-        scoresAdapter = ScoresAdapter(matches)
-
+        scoresAdapter = ScoresRecyclerAdapter(matches)
         view.rv_scores.adapter = scoresAdapter
-
         scoresPresenterImpl.loadScores()
 
     }
 
     override fun onResume() {
         super.onResume()
-
         timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
@@ -68,17 +62,15 @@ class ScoresFragment : Fragment(), ScoresContract.View {
 
     override fun onPause() {
         super.onPause()
-
         timer.cancel()
         timer.purge()
     }
 
     override fun onLoadScoresSuccess(scoresItemViewModel: ScoresItemViewModel) {
-        view?.tv_date?.text = scoresItemViewModel.date
-
+        view?.matchDate?.text =
+            getFormattedDateWithMonthNameFromDateString(scoresItemViewModel.date)
         matches.clear()
         matches.addAll(scoresItemViewModel.matches)
-
         scoresAdapter.notifyDataSetChanged()
         if (matches.size == 0)
             toaster.shortToast("There are no matches to show")
@@ -93,5 +85,4 @@ class ScoresFragment : Fragment(), ScoresContract.View {
             return ScoresFragment()
         }
     }
-
 }

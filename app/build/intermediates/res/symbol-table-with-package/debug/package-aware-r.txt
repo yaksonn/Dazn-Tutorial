@@ -1123,7 +1123,6 @@ id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
-id iv_news_item
 id labeled
 id largeLabel
 id left
@@ -1133,6 +1132,7 @@ id listMode
 id list_item
 id main_content
 id masked
+id matchDate
 id message
 id middle
 id mini
@@ -1141,6 +1141,10 @@ id mtrl_internal_children_alpha_tag
 id multiply
 id navigation_header_container
 id never
+id newsDateTextView
+id newsImageView
+id newsSpinner
+id newsTitleTextView
 id none
 id normal
 id notification_background
@@ -1166,6 +1170,7 @@ id rv_scores
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
+id scoreTextView
 id screen
 id scroll
 id scrollIndicatorDown
@@ -1195,7 +1200,6 @@ id snackbar_text
 id snap
 id snapMargins
 id spacer
-id spinner
 id split_action_bar
 id spread
 id spread_inside
@@ -1211,6 +1215,8 @@ id tabMode
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
+id teamATextView
+id teamBTextView
 id text
 id text1
 id text2
@@ -1234,12 +1240,6 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
-id tv_date
-id tv_news_item_date
-id tv_news_item_title
-id tv_score
-id tv_team_a_name
-id tv_team_b_name
 id uniform
 id unlabeled
 id up
@@ -1315,7 +1315,6 @@ layout design_text_input_password_icon
 layout fragment_main
 layout fragment_news
 layout fragment_scores
-layout list_item
 layout loading_progress_bar
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
@@ -1327,6 +1326,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout row_custom_dropdown
 layout scores_item
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
@@ -1390,7 +1390,6 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
-string section_format
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

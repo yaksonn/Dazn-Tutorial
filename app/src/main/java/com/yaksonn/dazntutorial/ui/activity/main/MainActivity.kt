@@ -3,6 +3,7 @@ package com.yaksonn.dazntutorial.ui.activity.main
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
+import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.AdapterView
 import android.widget.AdapterView.OnItemSelectedListener
@@ -13,14 +14,13 @@ import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.support.HasSupportFragmentInjector
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.list_item.view.*
+import kotlinx.android.synthetic.main.row_custom_dropdown.view.*
 import com.yaksonn.dazntutorial.util.listener.IFragmentNavigationSubject
 import com.yaksonn.dazntutorial.util.listener.INavigationManager
 import javax.inject.Inject
 
-class MainActivity : BaseActivity(), HasSupportFragmentInjector,
+class MainActivity : AppCompatActivity(), HasSupportFragmentInjector,
     IFragmentNavigationSubject {
-
 
     @Inject
     lateinit var fragmentDispatchingAndroidInjector: DispatchingAndroidInjector<Fragment>
@@ -28,23 +28,23 @@ class MainActivity : BaseActivity(), HasSupportFragmentInjector,
     @Inject
     lateinit var navigationManager: INavigationManager
 
-
-    override fun getLayoutId(): Int {
-        return R.layout.activity_main
-    }
-
-    override fun prepareView(savedInstanceState: Bundle?) {
-        spinner.adapter = CustomSpinnerAdapter(
+    override fun onCreate(savedInstanceState: Bundle?) {
+        AndroidInjection.inject(this)
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+        newsSpinner.adapter = CustomSpinnerAdapter(
             this,
             arrayOf("News", "Scores", "Standings")
         )
-
-        spinner.onItemSelectedListener = object : OnItemSelectedListener {
-            override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
-                spinner.text1.text = ""
-
+        newsSpinner.onItemSelectedListener = object : OnItemSelectedListener {
+            override fun onItemSelected(
+                parent: AdapterView<*>,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+                newsSpinner.text1.text = ""
                 when (position) {
-                    
                     0 -> {
                         navigationManager.showNews()
                         return
@@ -56,14 +56,12 @@ class MainActivity : BaseActivity(), HasSupportFragmentInjector,
                     else -> return
                 }
             }
-
             override fun onNothingSelected(parent: AdapterView<*>) {
-                spinner.text1.text = ""
+                newsSpinner.text1.text = ""
             }
         }
+
     }
-
-
 
     override fun supportFragmentInjector(): AndroidInjector<Fragment> {
         return fragmentDispatchingAndroidInjector
@@ -76,5 +74,4 @@ class MainActivity : BaseActivity(), HasSupportFragmentInjector,
     override fun supportFragmentManager(): FragmentManager {
         return supportFragmentManager
     }
-
 }

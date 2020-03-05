@@ -10,7 +10,6 @@ class ScoresPresenterImpl constructor(val view: ScoresContract.View, val scoresS
             override fun onSuccess(scoresViewModel: ScoresItemViewModel) {
                 view.onLoadScoresSuccess(scoresViewModel)
             }
-
             override fun onFailure(errorMessage: String) {
                 view.onLoadScoresFail(errorMessage)
             }

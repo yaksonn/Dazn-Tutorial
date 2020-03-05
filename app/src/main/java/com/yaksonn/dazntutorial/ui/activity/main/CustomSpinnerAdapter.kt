@@ -7,10 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import com.yaksonn.dazntutorial.R
-import kotlinx.android.synthetic.main.list_item.view.*
+import kotlinx.android.synthetic.main.row_custom_dropdown.view.*
 
 class CustomSpinnerAdapter(context: Context, val objects: Array<String>) :
-    ArrayAdapter<String>(context, R.layout.list_item, objects),
+    ArrayAdapter<String>(context, R.layout.row_custom_dropdown, objects),
     ThemedSpinnerAdapter {
     private val mDropDownHelper: ThemedSpinnerAdapter.Helper =
         ThemedSpinnerAdapter.Helper(context)
@@ -20,7 +20,7 @@ class CustomSpinnerAdapter(context: Context, val objects: Array<String>) :
 
         if (convertView == null) {
             val inflater = mDropDownHelper.dropDownViewInflater
-            view = inflater.inflate(R.layout.list_item, parent, false)
+            view = inflater.inflate(R.layout.row_custom_dropdown, parent, false)
         } else {
             view = convertView
         }

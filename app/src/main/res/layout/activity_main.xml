@@ -10,14 +10,14 @@
     tools:context=".ui.activity.main.MainActivity">
 
 
-    <FrameLayout
+    <android.support.constraint.ConstraintLayout
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/darker_gray">
 
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@+id/newsSpinner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right|center_vertical"
@@ -25,9 +25,11 @@
             android:dropDownWidth="600dp"
             android:overlapAnchor="false"
             android:padding="5dp"
-            android:popupBackground="@color/colorPrimaryDark" />
+            android:popupBackground="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints" />
 
-    </FrameLayout>
+    </android.support.constraint.ConstraintLayout>
 
     <android.support.v4.widget.NestedScrollView
         android:id="@+id/container"

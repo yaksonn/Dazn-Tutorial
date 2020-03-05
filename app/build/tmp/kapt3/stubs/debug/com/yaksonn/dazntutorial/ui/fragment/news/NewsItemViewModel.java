@@ -63,7 +63,7 @@ public final class NewsItemViewModel {
         
         @org.jetbrains.annotations.NotNull()
         public final java.util.List<com.yaksonn.dazntutorial.ui.fragment.news.NewsItemViewModel> convert(@org.jetbrains.annotations.NotNull()
-        java.util.List<com.yaksonn.dazntutorial.network.models.NewsModel.Item> newsItemNetworkingModels) {
+        java.util.List<? extends com.yaksonn.dazntutorial.network.models.NewsModel.Item> newsItemNetworkingModels) {
             return null;
         }
         

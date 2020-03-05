@@ -1,37 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="match_parent"
-                tools:showIn="@layout/fragment_news" android:layout_height="100dp">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#000">
 
-    <ImageView android:id="@+id/iv_news_item" android:layout_width="100dp" android:layout_height="100dp"
-               android:src="@android:color/darker_gray"/>
+    <ImageView
+        android:id="@+id/newsImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@android:color/darker_gray"
+        tools:ignore="MissingConstraints" />
 
     <TextView
-            android:id="@+id/tv_news_item_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            tools:text="asdasdasdasdasdasas dkjfasdlşfalsdfknaskld"
-            android:layout_above="@+id/tv_news_item_date"
-            android:textColor="@android:color/white"
-            android:textSize="17sp"
-            android:textStyle="bold"
-            android:layout_marginEnd="10dp"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="10dp"/>
+        android:id="@+id/newsTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/newsDateTextView"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/newsImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:text="Lorem ipsum  1988" />
+
     <TextView
-            android:id="@+id/tv_news_item_date"
-            android:textColor="@android:color/holo_red_dark"
-            android:layout_alignParentBottom="true"
-            android:textSize="15sp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="5dp"
-            tools:text="asdasdasdsadasdasddsşbşadbgfskdgjdbgksjdbglkjsbdgkjsbdglkjdg"
-            android:singleLine="true"
-            android:layout_marginStart="120dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-    <View android:id="@+id/divider" android:layout_width="match_parent" android:layout_height="1dp"
-          android:background="@android:color/darker_gray" android:layout_alignParentBottom="true"/>
-</RelativeLayout>
+        android:id="@+id/newsDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="12dp"
+        android:singleLine="true"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/newsImageView"
+        tools:ignore="MissingConstraints"
+        tools:text="Tue, 13 Jun 1999 12:00:05 +0000" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/darker_gray"
+        tools:ignore="MissingConstraints" />
+</android.support.constraint.ConstraintLayout>

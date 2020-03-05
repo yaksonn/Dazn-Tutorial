@@ -24,7 +24,7 @@ class NewsFragment : Fragment(), NewsContract.View {
 
     lateinit var newsPresenterImpl: NewsPresenterImpl
 
-    lateinit var newsAdapter: NewsAdapter
+    lateinit var newsAdapter: NewsRecyclerAdapter
 
     lateinit var newsDetailFragment: NewsDetailFragment
 
@@ -47,8 +47,8 @@ class NewsFragment : Fragment(), NewsContract.View {
 
         newsPresenterImpl = NewsPresenterImpl(this, newsService)
 
-        newsAdapter = NewsAdapter(newsItemViewModels, Picasso.with(context),
-            object : NewsAdapter.IOnNewsItemClickListener {
+        newsAdapter = NewsRecyclerAdapter(newsItemViewModels, Picasso.with(context),
+            object : NewsRecyclerAdapter.IOnNewsItemClickListener {
                 override fun onNewsItemClick(newsItemViewModel: NewsItemViewModel) {
                     newsDetailFragment = NewsDetailFragment.newInstance(newsItemViewModel.detailUrl)
                     newsDetailFragment.show(childFragmentManager, "SHOW_NEWS_DETAIL")

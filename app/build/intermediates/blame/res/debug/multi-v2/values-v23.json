@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/deejawuu/Desktop/Dazn-Tutorial/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
+            "outputFile": "C:\\Users\\yusuf.akson\\Desktop\\Dazn-Tutorial\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "/Users/deejawuu/.gradle/caches/transforms-2/files-2.1/25e742fae7259891d3f975d7704274b5/res/values-v23/values-v23.xml",
+                    "source": "C:\\Users\\yusuf.akson\\.gradle\\caches\\transforms-2\\files-2.1\\66a660d004b61ce33bffd282a6885a45\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/deejawuu/.gradle/caches/transforms-2/files-2.1/d4dbe6b13c403dfd9b825a60b61e1ebc/res/values-v23/values-v23.xml",
+                    "source": "C:\\Users\\yusuf.akson\\.gradle\\caches\\transforms-2\\files-2.1\\2ea306d59f5e21682358f4350e720889\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",

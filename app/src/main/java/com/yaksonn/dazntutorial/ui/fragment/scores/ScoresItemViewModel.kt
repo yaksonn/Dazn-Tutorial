@@ -5,9 +5,9 @@ import com.yaksonn.dazntutorial.network.models.ScoresModel
 class ScoresItemViewModel {
 
     var date: String
-    var matches: List<MatchViewModel>
+    var matches: List<TeamMatchViewModel>
 
-    constructor(date: String, matches: List<MatchViewModel>) {
+    constructor(date: String, matches: List<TeamMatchViewModel>) {
         this.date = date
         this.matches = matches
     }
@@ -20,8 +20,7 @@ class ScoresItemViewModel {
                     allMatches.add(it)
                 }
             }
-
-            return allMatches.get(0).date_utc?.let { ScoresItemViewModel(it, MatchViewModel.convert(allMatches)) }
+            return allMatches.get(0).date_utc?.let { ScoresItemViewModel(it, TeamMatchViewModel.convert(allMatches)) }
         }
     }
 
